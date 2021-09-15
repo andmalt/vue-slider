@@ -21,8 +21,8 @@
 <body>
     <main id="app" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-10 p-5">
-                <div class="box-container row">
+            <div class="col-10 p-5 ">
+                <div class="row box-container">
                     <!-- arrow to return previous page -->
                     <div class="previous-page d-flex justify-content-center align-items-center col-1">
                         <i class="fas fa-caret-left" @click="previousImage()"></i>
@@ -36,6 +36,10 @@
                         <i class="fas fa-caret-right" @click="nextImage()"></i>
                     </div>
                 </div>
+
+                <nav class="nav-img">
+                    <i class="fas fa-circle" @click="clickImage(index)" :class="(index == imgIndex)? 'active' : ''" v-for="(count,index) in images.length"></i>
+                </nav>
             </div>
         </div>
     </main>

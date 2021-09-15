@@ -2,6 +2,7 @@
     width: 100%;
     background-color: aqua;
     height: 800px;
+    position: relative;
 }
 .previous-page,
 .next-page{
@@ -20,4 +21,21 @@
 .image-box{
     height: 100%;
     overflow: hidden;
+}
+.nav-img{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.fa-circle{
+    margin: 0 0.5rem 0;
+    color: rgba(0, 0, 0, 0.7)
+}
+.fa-circle:hover{
+    color: rgba(0, 0, 0, 1)
+}
+.fa-circle:active,
+.active{
+    color: rgb(255, 73, 73)
 }
