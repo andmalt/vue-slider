@@ -1,0 +1,14 @@
+.box-container{
+    width: 100%;
+    background-color: aqua;
+    height: 800px;
+}
+.previous-page,
+.next-page{
+    background-color: rgb(110, 110, 255);
+    height: 100%;
+}
+.fas{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
