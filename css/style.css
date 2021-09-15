@@ -14,4 +14,10 @@
 }
 .image-box img{
     width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.image-box{
+    height: 100%;
+    overflow: hidden;
 }
