@@ -39,14 +39,12 @@ let app = new Vue({
             if(this.imgIndex < 0){
                 this.imgIndex = this.images.length -1 ;
             }
-            console.log(this.imgIndex);
         },
         nextImage: function(){
             this.imgIndex ++ ;
             if(this.imgIndex >= this.images.length ){
                 this.imgIndex = 0;
             } 
-            console.log(this.imgIndex);
         },
         clickImage: function(imgIndex){
             this.imgIndex = imgIndex;

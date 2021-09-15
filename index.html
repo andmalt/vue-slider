@@ -21,14 +21,14 @@
 <body>
     <main id="app" class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-10 p-5 ">
-                <div class="row box-container">
+            <div class="col-10 p-3 ">
+                <div class="row box-container justify-content-center">
                     <!-- arrow to return previous page -->
                     <div class="previous-page d-flex justify-content-center align-items-center col-1">
                         <i class="fas fa-caret-left" @click="previousImage()"></i>
                     </div>
                     <!-- container where there are images -->
-                    <div class="image-box col-10">
+                    <div class="image-box col-7">
                         <img :src="images[imgIndex].img" :alt="images[imgIndex].alt">
                     </div>
                     <!-- arrow to go next page -->
